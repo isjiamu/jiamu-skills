@@ -10,6 +10,7 @@ A curated collection of Claude Code skills for daily productivity workflows.
 |-------|-------------|
 | [magazine-layout](./magazine-layout/) | 将文本内容转换为精美的杂志风格 HTML 页面，支持 12 种视觉风格和 PDF 导出 |
 | [peers-advisory-group](./peers-advisory-group/) | 私董会专家助手，通过顶级商业领袖（巴菲特、盖茨、马斯克、乔布斯）的多轮提问帮助深入分析问题 |
+| [video-downloader](./video-downloader/) | 通用视频下载工具，支持 YouTube、Bilibili、Twitter/X、TikTok 等 1000+ 网站，基于 yt-dlp |
 
 ## Installation
 
@@ -53,6 +54,20 @@ Features:
 - Customizable advisor roster
 - Optional magazine-style HTML report generation
 
+### video-downloader
+
+Trigger phrases:
+- 提供任意视频链接（YouTube、Bilibili、Twitter 等）
+- "下载这个视频"、"帮我下载"
+- "download video"
+
+Features:
+- 支持 1000+ 网站（YouTube、Bilibili、Twitter/X、TikTok、Vimeo 等）
+- 多种质量选择（360p 到 4K）
+- 音频提取（MP3）
+- 字幕下载
+- WebM 转 MP4 格式转换
+
 ## Structure
 
 ```
@@ -70,6 +85,12 @@ jiamu-skills/
 │       ├── feedback-template.md
 │       ├── reflect-template.md
 │       └── report-template.md
+├── video-downloader/
+│   ├── SKILL.md              # Core skill instructions
+│   ├── scripts/
+│   │   └── download.py       # Video download script
+│   └── references/
+│       └── platform-tips.md  # Platform-specific tips
 ├── LICENSE
 └── README.md
 ```
