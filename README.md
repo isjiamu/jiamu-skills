@@ -27,6 +27,7 @@
 | [**peers-advisory-group**](./peers-advisory-group/) | 💡 决策咨询 | 私董会专家助手 - 通过4位顶级商业领袖的视角分析问题 | 商业决策、战略规划、问题诊断 |
 | [**video-downloader**](./video-downloader/) | 📹 工具类 | 通用视频下载器 - 支持1000+网站的视频下载 | YouTube、Bilibili、Twitter、TikTok等 |
 | [**gif-splitter**](./gif-splitter/) | 🖼️ 工具类 | GIF动图切分器 - 将超限GIF智能拆分成多个小文件 | 微信公众号上传、帧数限制、批量处理 |
+| [**stock-advisor**](./stock-advisor/) | 📈 投资分析 | A股投资顾问 - 全自动分析流水线，串联技术面、基本面、私董会决策 | 股票分析、投资决策、研报解读 |
 
 ### 🌟 核心特色
 
@@ -113,6 +114,22 @@ Skill：识别场景 → 收集信息 → 生成邮件 + 提示词
 - 微信公众号上传GIF提示"帧数超过300帧"
 - 需要将长GIF拆分成多个短GIF
 - 批量处理多个超限GIF文件
+
+---
+
+#### 📈 Stock Advisor - A股投资顾问
+
+**一句话描述**：全自动投资分析流水线，从数据到决策一口气跑完。
+
+**核心价值**：
+- 📊 **双模式输入**：上传K线图/财报截图，或直接提供股票代码
+- 🔍 **五大模块串联**：技术面分析 → 基本面分析 → 多维交叉验证 → 私董会决策 → 杂志排版输出
+- 🤖 **AKShare数据驱动**：免费开源数据源，实时行情 + 历史K线 + 财务指标
+- 💡 **私董会深度讨论**：巴菲特、马斯克、盖茨、乔布斯四位幕僚的5维度分析 + 观点碰撞
+- 📄 **精美报告输出**：杂志风格HTML → PDF → 飞书云文档
+
+**适用场景**：
+- A股个股深度分析、持仓评估、投资决策参考
 
 ---
 
@@ -286,6 +303,17 @@ jiamu-skills/
 │   ├── SKILL.md                 # 核心指令
 │   └── scripts/
 │       └── split_gif.py         # 切分脚本
+├── stock-advisor/               # A股投资顾问
+│   ├── SKILL.md                 # 核心编排流程
+│   ├── scripts/
+│   │   ├── technical_analysis.py   # 技术指标计算
+│   │   ├── fundamental_analysis.py # 基本面分析
+│   │   ├── fetch_market_data.py    # 数据获取
+│   │   └── html_to_pdf.py         # HTML转PDF
+│   └── references/
+│       ├── advisory-board.md       # 私董会详细指南
+│       ├── report-structure.md     # 报告结构模板
+│       └── image-prompts.md        # 图像识别提示词
 ├── LICENSE
 └── README.md
 ```
@@ -328,6 +356,7 @@ MIT License - 详见 [LICENSE](./LICENSE)
 
 ### 📊 版本历史
 
+- **v1.5.0** (2026-03-28) - 新增 stock-advisor（A股投资顾问，全自动分析流水线）
 - **v1.4.0** (2026-01-26) - 新增 gif-splitter（GIF动图切分器）
 - **v1.3.0** (2026-01-23) - 新增 sales-ai-assistant（25个销售场景）
 - **v1.2.0** - 新增 video-downloader
@@ -357,6 +386,7 @@ Made with ❤️ by jiamu
 | [**peers-advisory-group**](./peers-advisory-group/) | 💡 Decision Making | Virtual advisory board with 4 business legends | Strategic decisions, problem analysis |
 | [**video-downloader**](./video-downloader/) | 📹 Utility | Universal video downloader supporting 1000+ websites | YouTube, Bilibili, Twitter, TikTok, etc. |
 | [**gif-splitter**](./gif-splitter/) | 🖼️ Utility | GIF splitter for frame limit issues | WeChat upload, batch processing |
+| [**stock-advisor**](./stock-advisor/) | 📈 Investment | A-share Stock Advisor - fully automated analysis pipeline | Stock analysis, investment decisions |
 
 ### 🌟 Key Features
 
@@ -464,6 +494,7 @@ AI tools and productivity enthusiast
 
 ### 📊 Version History
 
+- **v1.5.0** (2026-03-28) - Added stock-advisor (A-share investment analysis pipeline)
 - **v1.4.0** (2026-01-26) - Added gif-splitter (GIF frame splitter)
 - **v1.3.0** (2026-01-23) - Added sales-ai-assistant (25 sales scenarios)
 - **v1.2.0** - Added video-downloader
