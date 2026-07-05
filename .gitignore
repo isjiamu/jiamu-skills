@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Obsidian
+.obsidian/
+
+# 本地备份
+*.bak
+*.bak.*
