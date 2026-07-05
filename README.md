@@ -6,7 +6,7 @@
 ![Claude Code](https://img.shields.io/badge/Claude%20Code-Supported-6B5B95?style=flat-square)
 ![Skills](https://img.shields.io/badge/Skills-10-0A7CFF?style=flat-square)
 
-> 🌏 English version: see [English](#english) section below.
+**中文** | [English](./README.en.md)
 
 一套适配 Claude Code 等 Agent 环境的技能合集，覆盖**思维模型、决策咨询、销售赋能、投资分析、内容设计和实用工具**六大类，共 10 个技能。
 
@@ -230,40 +230,3 @@ MIT License - 详见 [LICENSE](./LICENSE)
 Made with ❤️ by jiamu
 
 </div>
-
----
-
-## English
-
-**A curated collection of 10 Agent Skills for Claude Code** — covering thinking models, decision consulting, sales enablement, investment analysis, content design, and utilities.
-
-### Quick Start
-
-```bash
-npx skills add https://github.com/isjiamu/jiamu-skills
-```
-
-### Skills by Category
-
-| Category | Skill | Description |
-|----------|-------|-------------|
-| 🧠 Thinking Model | [**gidlin-law**](./gidlin-law/) | Turn vague troubles into clear problem statements via 6-step questioning — a well-stated problem is half-solved |
-| 🧠 Thinking Model | [**five-why**](./five-why/) | Peel back symptoms with consecutive "why"s to find systemic root causes |
-| 🧠 Thinking Model | [**first-principles-mentor**](./first-principles-mentor/) | Socratic questioning down to axioms, then rebuild disruptive solutions from zero |
-| 🧠 Thinking Model | [**six-thinking-hats**](./six-thinking-hats/) | De Bono's parallel thinking across six dimensions with structured decision reports |
-| 💡 Decision Making | [**peers-advisory-group**](./peers-advisory-group/) | Virtual advisory board: Buffett, Gates, Musk & Jobs question and advise in rounds, backed by real-time Baidu data |
-| 🎯 Sales Enablement | [**sales-ai-assistant**](./sales-ai-assistant/) | Describe a business scenario, get professional sales content — 25 scenarios covered |
-| 📈 Investment | [**stock-advisor**](./stock-advisor/) | A-share analysis pipeline: technical → fundamental → cross-validation → advisory board → magazine report |
-| 🎨 Content Design | [**magazine-layout**](./magazine-layout/) | Text to magazine-style HTML pages, 12 visual styles, PDF export |
-| 🛠️ Utility | [**video-downloader**](./video-downloader/) | Download from 1000+ sites (YouTube, Bilibili, X, TikTok) |
-| 🛠️ Utility | [**gif-splitter**](./gif-splitter/) | Split GIFs exceeding WeChat's 300-frame upload limit |
-
-**Recommended thinking-tool chain**: `gidlin-law` (define) → `five-why` / `first-principles-mentor` (dig) → `six-thinking-hats` (decide) → `peers-advisory-group` (consult).
-
-### Version History
-
-See [CHANGELOG.md](./CHANGELOG.md).
-
-### License
-
-MIT — see [LICENSE](./LICENSE).
