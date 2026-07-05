@@ -1,154 +1,65 @@
-# Jiamu Skills
+# Jiamu Skills · 思维模型 / 销售赋能 / 内容设计 / 实用工具
 
-<div align="center">
+![GitHub stars](https://img.shields.io/github/stars/isjiamu/jiamu-skills?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
+![Skill](https://img.shields.io/badge/Skill-Agent-111111?style=flat-square)
+![Claude Code](https://img.shields.io/badge/Claude%20Code-Supported-6B5B95?style=flat-square)
+![Skills](https://img.shields.io/badge/Skills-10-0A7CFF?style=flat-square)
 
-**A curated collection of Claude Code skills for daily productivity workflows**
+> 🌏 English version: see [English](#english) section below.
 
-甲木常用的 Claude Code Skills 集合 - 专注于提升销售、内容创作和日常工作效率
+一套适配 Claude Code 等 Agent 环境的技能合集，覆盖**思维模型、决策咨询、销售赋能、投资分析、内容设计和实用工具**六大类，共 10 个技能。
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Claude Code](https://img.shields.io/badge/Claude%20Code-Skills-blue)](https://claude.ai/code)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/isjiamu/jiamu-skills/pulls)
-
-[English](#english) | [中文](#中文)
-
-</div>
+> 由 [甲木](https://github.com/isjiamu) 在日常销售、内容创作和决策咨询工作流中沉淀而成——每个技能都解决一个真实、反复出现的问题。
 
 ---
 
-## 中文
+## 30 秒开始
 
-### 📦 技能列表
-
-| 技能 | 类别 | 描述 | 场景 |
-|-----|------|------|------|
-| [**sales-ai-assistant**](./sales-ai-assistant/) | 🎯 销售赋能 | 销售AI助手 - 将业务场景转化为AI提示词，自动生成销售内容 | 25个销售场景：邮件、方案、分析、竞品对比等 |
-| [**magazine-layout**](./magazine-layout/) | 🎨 内容设计 | 杂志排版工具 - 将文本转换为精美的杂志风格HTML页面 | 12种视觉风格，支持PDF导出 |
-| [**peers-advisory-group**](./peers-advisory-group/) | 💡 决策咨询 | 私董会专家助手 - 通过4位顶级商业领袖的视角分析问题 | 商业决策、战略规划、问题诊断 |
-| [**video-downloader**](./video-downloader/) | 📹 工具类 | 通用视频下载器 - 支持1000+网站的视频下载 | YouTube、Bilibili、Twitter、TikTok等 |
-| [**gif-splitter**](./gif-splitter/) | 🖼️ 工具类 | GIF动图切分器 - 将超限GIF智能拆分成多个小文件 | 微信公众号上传、帧数限制、批量处理 |
-| [**stock-advisor**](./stock-advisor/) | 📈 投资分析 | A股投资顾问 - 全自动分析流水线，串联技术面、基本面、私董会决策 | 股票分析、投资决策、研报解读 |
-| [**gidlin-law**](./gidlin-law/) | 🧠 思维模型 | 吉德林法则顾问 - 六步结构化提问，把模糊困扰转化为清晰问题陈述 | 理清思路、定义问题、思维工具前置 |
-| [**five-why**](./five-why/) | 🧠 思维模型 | 5Why溯源顾问 - 连续追问"为什么"找到系统性根本原因 | 根因分析、团队复盘、问题溯源 |
-| [**first-principles-mentor**](./first-principles-mentor/) | 🧠 思维模型 | 第一性原理思维导师 - 拆解问题至基本公理，从零重构颠覆性方案 | 本质分析、颠覆式创新、重大决策拆解 |
-| [**six-thinking-hats**](./six-thinking-hats/) | 🧠 思维模型 | 六顶思考帽决策引导师 - 平行思维法六维度系统化分析 | 决策分析、利弊权衡、团队结构化讨论 |
-
-### 🌟 核心特色
-
-#### 🎯 Sales AI Assistant - 销售AI助手
-
-**一句话描述**：不会写Prompt？没关系，描述场景就能生成专业销售内容。
-
-**核心价值**：
-- ✅ **场景识别**：智能匹配25个销售场景（陌生开发、演示跟进、客户计划、竞品分析等）
-- ✅ **信息收集**：自动提取关键信息，一次性收集缺失内容
-- ✅ **双重输出**：生成可直接使用的内容 + 优化提示词（供学习）
-- ✅ **快捷调整**：支持"更正式"、"简短点"、"加数据"等快捷指令
-
-**使用示例**：
-```
-用户：我要给腾讯CTO发封邮件介绍我们的AI产品
-↓
-Skill：识别场景 → 收集信息 → 生成邮件 + 提示词
+```bash
+npx skills add https://github.com/isjiamu/jiamu-skills
 ```
 
-**支持场景**：
-- 对外联络（5个）：陌生开发邮件、演示后续、续约方案、活动摘要、管道汇报
-- 销售策略（5个）：客户计划、区域规划、账户优先级、评分模型、市场进入
-- 竞争情报（5个）：对战卡、竞品分析、单页文件、异议反驳、客户证明
-- 数据分析（5个）：转化率、业绩排名、交易速度、营销归因、性能对比
-- 视觉素材（5个）：销售漏斗、人物角色、区域地图、庆祝图形等
+也可以直接把这段话发给有 shell 权限的 AI Agent：
+
+```text
+帮我安装 jiamu-skills。请把 https://github.com/isjiamu/jiamu-skills 克隆到
+~/Projects/jiamu-skills，然后把其中每个技能目录符号链接到 ~/.claude/skills/ 下，
+完成后验证每个链接下都能读到 SKILL.md。
+```
+
+已经安装过的话，用这段话更新：
+
+```text
+帮我更新 jiamu-skills。请进入本地仓库执行 git pull，然后告诉我当前最新 commit。
+```
+
+安装后直接对 Agent 说：
+
+```text
+我最近很迷茫，帮我理清思路。          → 触发 gidlin-law
+这个问题老是反复出现，帮我找找根因。    → 触发 five-why
+帮我从多个角度分析要不要换工作。       → 触发 six-thinking-hats
+开始私董会，我在纠结要不要创业。       → 触发 peers-advisory-group
+```
 
 ---
 
-#### 🎨 Magazine Layout - 杂志排版工具
+## 📦 技能总览
 
-**一句话描述**：把文字内容秒变高颜值杂志页面。
+### 🧠 思维模型（4个）
 
-**核心价值**：
-- 📱 12种精选视觉风格（经典、现代、科技、自然等）
-- 🎯 Tailwind CSS响应式设计，完美适配各种设备
-- 📄 支持多引擎PDF导出（WeasyPrint、wkhtmltopdf、Playwright）
-- 🎨 自动排版：标题、引言、正文、图片布局
+从"说不清问题"到"做出决策"的完整思维工具链。
 
-**适用场景**：
-- 文章发布、报告制作、营销材料、个人博客
-
----
-
-#### 💡 Peers Advisory Group - 私董会专家助手
-
-**一句话描述**：4位商业大师（巴菲特、盖茨、马斯克、乔布斯）组团帮你分析问题。
-
-**核心价值**：
-- 👥 多角度分析：投资、技术、创新、产品四大视角
-- 🔄 深度提问：每位顾问3轮提问，层层深入问题本质
-- 📊 结构化输出：问题诊断 → 多维分析 → 可执行建议
-- 📝 可选生成杂志风格HTML报告
-
-**适用场景**：
-- 重大商业决策、战略规划、创业方向选择、职业发展
-
----
-
-#### 📹 Video Downloader - 通用视频下载器
-
-**一句话描述**：一个skill下载全网视频。
-
-**核心价值**：
-- 🌍 支持1000+网站（YouTube、Bilibili、Twitter/X、TikTok、Vimeo等）
-- 🎬 多种质量选择（360p到4K）
-- 🎵 音频提取（MP3格式）
-- 📝 字幕下载
-- 🔄 WebM自动转MP4
-
----
-
-#### 🖼️ GIF Splitter - GIF动图切分器
-
-**一句话描述**：解决微信公众号"帧数超过300帧"上传限制。
-
-**核心价值**：
-- ✂️ **智能切分**：自动检测帧数，均匀拆分成多个文件
-- 📊 **信息查看**：支持查看GIF帧数、大小、尺寸等信息
-- 📁 **批量处理**：支持整个文件夹批量切分
-- ⚙️ **灵活配置**：可自定义最大帧数、输出目录
-
-**适用场景**：
-- 微信公众号上传GIF提示"帧数超过300帧"
-- 需要将长GIF拆分成多个短GIF
-- 批量处理多个超限GIF文件
-
----
-
-#### 📈 Stock Advisor - A股投资顾问
-
-**一句话描述**：全自动投资分析流水线，从数据到决策一口气跑完。
-
-**核心价值**：
-- 📊 **双模式输入**：上传K线图/财报截图，或直接提供股票代码
-- 🔍 **五大模块串联**：技术面分析 → 基本面分析 → 多维交叉验证 → 私董会决策 → 杂志排版输出
-- 🤖 **AKShare数据驱动**：免费开源数据源，实时行情 + 历史K线 + 财务指标
-- 💡 **私董会深度讨论**：巴菲特、马斯克、盖茨、乔布斯四位幕僚的5维度分析 + 观点碰撞
-- 📄 **精美报告输出**：杂志风格HTML → PDF → 飞书云文档
-
-**适用场景**：
-- A股个股深度分析、持仓评估、投资决策参考
-
----
-
-#### 🧠 思维模型系列 - 四件套
-
-**一句话描述**：从"说不清问题"到"做出决策"的完整思维工具链。
-
-| Skill | 思维模型 | 解决什么 |
-|-------|---------|---------|
-| **gidlin-law** | 吉德林法则 | 把问题写清楚，就已经解决了一半——六步提问把模糊困扰变成清晰问题陈述 |
-| **five-why** | 5Why 分析法 | 连续追问"为什么"，剥离表象找到机制性根因，制定根治对策 |
-| **first-principles-mentor** | 第一性原理 | 苏格拉底式提问拆解至基本公理，挑战行业惯例，从零重构方案 |
-| **six-thinking-hats** | 六顶思考帽 | 德·博诺平行思维法，六个维度系统化分析，产出结构化决策报告 |
+| 技能 | 思维模型 | 解决什么 | 触发关键词 |
+|------|---------|---------|-----------|
+| [**gidlin-law**](./gidlin-law/) | 吉德林法则 | 把问题写清楚，就已经解决了一半——六步提问把模糊困扰变成清晰问题陈述 | "帮我理清思路"、"我很迷茫"、"吉德林" |
+| [**five-why**](./five-why/) | 5Why 分析法 | 连续追问"为什么"剥离表象，找到机制性根因并制定根治对策 | "5Why"、"找根因"、"根本原因分析" |
+| [**first-principles-mentor**](./first-principles-mentor/) | 第一性原理 | 苏格拉底式提问拆解至基本公理，挑战行业惯例，从零重构方案 | "第一性原理"、"分析本质"、"回归本源" |
+| [**six-thinking-hats**](./six-thinking-hats/) | 六顶思考帽 | 德·博诺平行思维法，六个维度系统化分析，产出结构化决策报告 | "六顶思考帽"、"利弊分析"、"多角度分析" |
 
 **推荐串联用法**：
+
 ```
 gidlin-law（定义问题）
   → five-why（找根因）或 first-principles-mentor（拆解本质）
@@ -156,261 +67,165 @@ gidlin-law（定义问题）
       → peers-advisory-group（私董会深度咨询）
 ```
 
+### 💡 决策咨询（1个）
+
+| 技能 | 描述 | 触发关键词 |
+|------|------|-----------|
+| [**peers-advisory-group**](./peers-advisory-group/) | 私董会专家助手——巴菲特、盖茨、马斯克、乔布斯四位幕僚多轮提问与反馈，融合百度搜索/百科实时数据"带着数据聊" | "开始私董会"、"私董会" |
+
+### 🎯 销售赋能（1个）
+
+| 技能 | 描述 | 触发关键词 |
+|------|------|-----------|
+| [**sales-ai-assistant**](./sales-ai-assistant/) | 销售AI助手——描述业务场景即可生成专业销售内容，覆盖25个场景（陌生开发、演示跟进、竞品对战卡、转化分析等），同时输出优化提示词供学习 | "我要给客户发封邮件"、"竞品分析" |
+
+### 📈 投资分析（1个）
+
+| 技能 | 描述 | 触发关键词 |
+|------|------|-----------|
+| [**stock-advisor**](./stock-advisor/) | A股投资顾问——全自动分析流水线：技术面 → 基本面 → 交叉验证 → 私董会决策 → 杂志报告，AKShare 免费数据驱动 | "帮我分析股票"、股票代码、K线图截图 |
+
+### 🎨 内容设计（1个）
+
+| 技能 | 描述 | 触发关键词 |
+|------|------|-----------|
+| [**magazine-layout**](./magazine-layout/) | 杂志排版工具——文本秒变高颜值杂志页面，12种视觉风格，Tailwind 响应式，支持多引擎PDF导出 | "杂志排版"、"文章排版"、"magazine layout" |
+
+### 🛠️ 实用工具（2个）
+
+| 技能 | 描述 | 触发关键词 |
+|------|------|-----------|
+| [**video-downloader**](./video-downloader/) | 通用视频下载器——支持1000+网站（YouTube、Bilibili、Twitter/X、TikTok），可选质量、提取音频、下载字幕 | 直接发视频链接、"下载视频" |
+| [**gif-splitter**](./gif-splitter/) | GIF动图切分器——解决微信公众号"帧数超过300帧"限制，智能均分、保留帧率、支持批量 | "GIF帧数超限"、"切分GIF" |
+
 ---
 
-### 📥 安装方式
+## 常见使用场景
 
-#### 方式1：通过Claude Code插件市场（推荐）
+| 任务 | 推荐方式 |
+|------|---------|
+| 脑子很乱，说不清问题在哪 | 先用 **gidlin-law** 六步定义问题，再决定用哪个工具深入 |
+| 同一个问题反复出现 | **five-why** 溯源找机制性根因，输出根治对策 |
+| 重大决策（换工作/创业/投资） | **six-thinking-hats** 六维分析，或 **peers-advisory-group** 私董会深度咨询 |
+| 挑战行业惯例、寻找颠覆式创新 | **first-principles-mentor** 拆到公理再重构 |
+| 写销售邮件/方案/竞品对比 | **sales-ai-assistant** 描述场景直接生成 |
+| 个股深度分析 | **stock-advisor** 发股票代码或K线截图，全流水线自动跑 |
+| 文章排版成杂志页面/PDF | **magazine-layout** 选风格生成HTML |
+| 公众号GIF上传失败 | **gif-splitter** 自动检测帧数并切分 |
+
+---
+
+## 适合 / 不适合
+
+**✅ 合适**：个人决策与复盘 / 销售内容批量生产 / A股个股研究 / 文章视觉化呈现 / 公众号运营中的素材处理
+
+**❌ 不合适**：需要实时协作编辑的场景 / 无 shell 权限的普通 Chatbot（思维模型类勉强可用，工具类无法运行脚本）
+
+---
+
+## 📥 安装
+
+### 方式一：一行命令安装（推荐）
 
 ```bash
-claude plugin marketplace add isjiamu/jiamu-skills
+# 安装全部技能
+npx skills add https://github.com/isjiamu/jiamu-skills
+
+# 或只装某一个
+npx skills add https://github.com/isjiamu/jiamu-skills --skill six-thinking-hats
 ```
 
-#### 方式2：手动安装
+### 方式二：把下面这段话直接发给 AI
+
+> 帮我安装 `jiamu-skills` 这个 Claude Code 技能合集。请按下面步骤做：
+>
+> 1. 执行 `git clone https://github.com/isjiamu/jiamu-skills.git ~/Projects/jiamu-skills`
+> 2. 把仓库里每个技能目录（含 SKILL.md 的目录）符号链接到 `~/.claude/skills/` 下
+> 3. 验证每个链接下都能读到 `SKILL.md`
+> 4. 告诉我装好了哪些技能，之后我说"开始私董会"之类的话就会触发对应技能
+
+### 方式三：手动命令行
 
 ```bash
-# 克隆到Claude Code skills目录
-git clone https://github.com/isjiamu/jiamu-skills.git ~/.claude/skills/jiamu-skills
-
-# 或者创建符号链接
-ln -s /path/to/jiamu-skills/sales-ai-assistant ~/.claude/skills/sales-ai-assistant
-ln -s /path/to/jiamu-skills/magazine-layout ~/.claude/skills/magazine-layout
-# ... 其他skills
+git clone https://github.com/isjiamu/jiamu-skills.git ~/Projects/jiamu-skills
+for d in ~/Projects/jiamu-skills/*/; do
+  [ -f "$d/SKILL.md" ] && ln -s "${d%/}" ~/.claude/skills/$(basename "$d")
+done
 ```
 
-#### 方式3：从.skill文件安装
-
-每个skill都提供了打包的.skill文件（zip格式），可以直接解压到skills目录。
+> 💡 推荐用符号链接而不是拷贝：仓库 `git pull` 之后所有技能自动同步最新版。
 
 ---
 
-### 🚀 使用方法
+## 平台支持
 
-#### Sales AI Assistant
-
-**触发方式**：
-- 直接描述需求：`"我要给客户发封邮件"`
-- 或调用：`/sales-ai-assistant`
-
-**示例对话**：
-```
-用户：我要分析一下我们销售团队的成交率
-
-Skill：
-✅ 识别场景：分析管道转化率
-📋 需要提供：销售流程数据（CSV或文本）
-
-[用户提供数据]
-
-Skill：
-📊 生成分析报告：
-- 各阶段转化率表格
-- 流失点识别
-- 改进建议
-
-💡 使用的提示词：
-[完整提示词展示]
-```
+| 平台 | 状态 | 说明 |
+|------|------|------|
+| Claude Code | ✅ 支持 | 原生 Skill 工作流，全部技能可用 |
+| Cursor / 其他本地 Agent | ✅ 可用 | 需要能读写文件并执行 shell 命令 |
+| 普通 Chatbot | ⚠️ 部分可用 | 思维模型类可把 SKILL.md 当提示词用；工具类（gif-splitter 等）依赖本地脚本 |
 
 ---
 
-#### Magazine Layout
-
-**触发方式**：
-- `"把这篇文章做成杂志风格"`
-- `"杂志排版"`、`"magazine layout"`
-
-**示例**：
-```
-用户：把我的博客文章做成现代风格的杂志页面
-
-Skill：
-🎨 选择风格 → 🖼️ 生成HTML → 📄 可选导出PDF
-```
-
----
-
-#### Peers Advisory Group
-
-**触发方式**：
-- `"开始私董会"`、`"peers advisory"`
-
-**示例**：
-```
-用户：我在考虑是否要转型做SaaS产品
-
-Skill：
-第1轮 - 巴菲特：关于市场和财务的3个问题
-第2轮 - 盖茨：关于技术和团队的3个问题
-第3轮 - 马斯克：关于创新和执行的3个问题
-第4轮 - 乔布斯：关于产品和用户的3个问题
-
-[收集所有回答]
-
-最终报告：
-- 问题诊断
-- 多维度分析
-- 决策建议
-```
-
----
-
-#### Video Downloader
-
-**触发方式**：
-- 直接发送视频链接
-- `"下载这个视频"`、`"download video"`
-
-**示例**：
-```
-用户：https://www.youtube.com/watch?v=xxxxx
-
-Skill：
-🎬 检测视频信息 → 📊 显示可用格式 → 💾 下载视频
-```
-
----
-
-#### GIF Splitter
-
-**触发方式**：
-- `"GIF帧数超限"`、`"切分GIF"`、`"gif splitter"`
-
-**示例**：
-```
-用户：我的GIF上传微信公众号提示帧数超过300帧
-
-Skill：
-📊 检测帧数 → ✂️ 智能切分 → 💾 保存文件
-
-输出：
-  ✓ 动画_第1部分.gif: 247 帧, 2.11 MB
-  ✓ 动画_第2部分.gif: 247 帧, 1.89 MB
-```
-
----
-
-### 📁 项目结构
+## 📁 项目结构
 
 ```
 jiamu-skills/
-├── sales-ai-assistant/          # 销售AI助手
-│   ├── SKILL.md                 # 核心指令
-│   ├── README.md                # 详细文档
-│   ├── references/              # 25个场景模板
-│   │   ├── outreach.md          # 对外联络（5个）
-│   │   ├── strategy.md          # 销售策略（5个）
-│   │   ├── competitive.md       # 竞争情报（5个）
-│   │   ├── analytics.md         # 数据分析（5个）
-│   │   └── visuals.md           # 视觉素材（5个）
-│   └── assets/
-│       └── scenario-keywords.json  # 场景匹配配置
-├── magazine-layout/             # 杂志排版工具
-│   ├── SKILL.md
-│   ├── references/
-│   │   └── styles.md            # 12种风格模板
-│   └── scripts/
-│       └── html_to_pdf.py       # PDF转换脚本
-├── peers-advisory-group/        # 私董会助手
-│   ├── SKILL.md
-│   └── references/
-│       ├── default-advisors.md
-│       ├── feedback-template.md
-│       ├── reflect-template.md
-│       └── report-template.md
-├── video-downloader/            # 视频下载器
-│   ├── SKILL.md
-│   ├── scripts/
-│   │   └── download.py          # 下载脚本
-│   └── references/
-│       └── platform-tips.md
-├── gif-splitter/                # GIF动图切分器
-│   ├── SKILL.md                 # 核心指令
-│   └── scripts/
-│       └── split_gif.py         # 切分脚本
-├── stock-advisor/               # A股投资顾问
-│   ├── SKILL.md                 # 核心编排流程
-│   ├── scripts/
-│   │   ├── technical_analysis.py   # 技术指标计算
-│   │   ├── fundamental_analysis.py # 基本面分析
-│   │   ├── fetch_market_data.py    # 数据获取
-│   │   └── html_to_pdf.py         # HTML转PDF
-│   └── references/
-│       ├── advisory-board.md       # 私董会详细指南
-│       ├── report-structure.md     # 报告结构模板
-│       └── image-prompts.md        # 图像识别提示词
-├── gidlin-law/                  # 吉德林法则顾问
-│   └── SKILL.md
-├── five-why/                    # 5Why溯源顾问
-│   ├── SKILL.md
-│   └── references/
-│       └── visualization-template.md
-├── first-principles-mentor/     # 第一性原理思维导师
-│   └── SKILL.md
-├── six-thinking-hats/           # 六顶思考帽决策引导师
-│   ├── SKILL.md
-│   └── references/
-│       ├── hat-personas.md
-│       ├── report-template.md
-│       └── team-guide.md
+├── gidlin-law/               # 🧠 吉德林法则顾问
+├── five-why/                 # 🧠 5Why溯源顾问
+├── first-principles-mentor/  # 🧠 第一性原理思维导师
+├── six-thinking-hats/        # 🧠 六顶思考帽决策引导师
+├── peers-advisory-group/     # 💡 私董会专家助手
+├── sales-ai-assistant/       # 🎯 销售AI助手（25个场景模板）
+├── stock-advisor/            # 📈 A股投资顾问（分析脚本 + 报告模板）
+├── magazine-layout/          # 🎨 杂志排版工具（12种风格 + PDF导出）
+├── video-downloader/         # 🛠️ 通用视频下载器
+├── gif-splitter/             # 🛠️ GIF动图切分器
 ├── CHANGELOG.md
 ├── LICENSE
 └── README.md
 ```
 
----
-
-### 🤝 贡献指南
-
-欢迎提交Issue和Pull Request！
-
-**贡献新Skill**：
-1. Fork本仓库
-2. 创建新的skill目录
-3. 确保包含：`SKILL.md`（核心指令）、`README.md`（使用说明）
-4. 提交PR并说明skill的用途和使用场景
+每个技能目录均包含 `SKILL.md`（核心指令），按需附带 `references/`（参考模板）、`scripts/`（可执行脚本）、`README.md`（详细文档）。
 
 ---
 
-### 📄 许可证
+## 🤝 贡献指南
 
-MIT License - 详见 [LICENSE](./LICENSE)
+欢迎提交 Issue 和 Pull Request！
 
----
-
-### 👤 作者
-
-**jiamu** ([@isjiamu](https://github.com/isjiamu))
-
-专注于AI工具和生产力提升的实践者
+**贡献新技能**：
+1. Fork 本仓库，创建新的技能目录
+2. 必须包含 `SKILL.md`（含 name/description frontmatter 和触发场景）
+3. 参考模板放 `references/`，可执行脚本放 `scripts/`
+4. 提交 PR 并说明技能的用途和使用场景
 
 ---
 
-### 🔗 相关链接
+## 📊 版本历史
 
-- [Claude Code 官网](https://claude.ai/code)
-- [Claude Code Skills 文档](https://docs.anthropic.com/claude-code)
-- [我的其他项目](https://github.com/isjiamu?tab=repositories)
-
----
-
-### 📊 版本历史
-
-- **v1.6.0** (2026-07-05) - 新增思维模型系列：gidlin-law、five-why、first-principles-mentor、six-thinking-hats；peers-advisory-group 融合百度实时数据
-- **v1.5.0** (2026-03-28) - 新增 stock-advisor（A股投资顾问，全自动分析流水线）
-- **v1.4.0** (2026-01-26) - 新增 gif-splitter（GIF动图切分器）
-- **v1.3.0** (2026-01-23) - 新增 sales-ai-assistant（25个销售场景）
-- **v1.2.0** - 新增 video-downloader
-- **v1.1.0** - 新增 magazine-layout 和 peers-advisory-group
-- **v1.0.0** - 初始版本
+- **v1.6.0** (2026-07-05) - 新增思维模型系列4件套；peers-advisory-group 融合百度实时数据；magazine-layout 独立仓库归档合并
+- **v1.5.0** (2026-03-28) - 新增 stock-advisor
+- **v1.4.0** (2026-01-26) - 新增 gif-splitter
+- **v1.3.0** (2026-01-23) - 新增 sales-ai-assistant
 
 完整更新记录见 [CHANGELOG.md](./CHANGELOG.md)
 
 ---
 
+## 📄 许可证
+
+MIT License - 详见 [LICENSE](./LICENSE)
+
+## 👤 作者
+
+**甲木 / jiamu** ([@isjiamu](https://github.com/isjiamu)) — 专注于AI工具和生产力提升的实践者
+
+---
+
 <div align="center">
 
-**⭐ 如果这些skills对你有帮助，请给个Star支持！⭐**
+**⭐ 如果这些技能对你有帮助，请给个 Star 支持！⭐**
 
 Made with ❤️ by jiamu
 
@@ -420,141 +235,35 @@ Made with ❤️ by jiamu
 
 ## English
 
-### 📦 Skills Overview
+**A curated collection of 10 Agent Skills for Claude Code** — covering thinking models, decision consulting, sales enablement, investment analysis, content design, and utilities.
 
-| Skill | Category | Description | Use Cases |
-|-------|----------|-------------|-----------|
-| [**sales-ai-assistant**](./sales-ai-assistant/) | 🎯 Sales Enablement | Transform business scenarios into AI prompts and auto-generate sales content | 25 scenarios: emails, proposals, analysis, competitive intelligence |
-| [**magazine-layout**](./magazine-layout/) | 🎨 Content Design | Transform text into beautiful magazine-style HTML pages | 12 visual styles with PDF export |
-| [**peers-advisory-group**](./peers-advisory-group/) | 💡 Decision Making | Virtual advisory board with 4 business legends | Strategic decisions, problem analysis |
-| [**video-downloader**](./video-downloader/) | 📹 Utility | Universal video downloader supporting 1000+ websites | YouTube, Bilibili, Twitter, TikTok, etc. |
-| [**gif-splitter**](./gif-splitter/) | 🖼️ Utility | GIF splitter for frame limit issues | WeChat upload, batch processing |
-| [**stock-advisor**](./stock-advisor/) | 📈 Investment | A-share Stock Advisor - fully automated analysis pipeline | Stock analysis, investment decisions |
-| [**gidlin-law**](./gidlin-law/) | 🧠 Thinking Model | Gidlin's Law advisor - turn vague troubles into clear problem statements via 6-step questioning | Problem definition, clarifying thoughts |
-| [**five-why**](./five-why/) | 🧠 Thinking Model | 5 Whys root-cause advisor - peel back symptoms to find systemic root causes | Root cause analysis, retrospectives |
-| [**first-principles-mentor**](./first-principles-mentor/) | 🧠 Thinking Model | First-principles mentor - deconstruct problems to axioms and rebuild from zero | Essential analysis, disruptive innovation |
-| [**six-thinking-hats**](./six-thinking-hats/) | 🧠 Thinking Model | Six Thinking Hats facilitator - parallel thinking across six dimensions | Decision analysis, structured discussion |
-
-### 🌟 Key Features
-
-#### 🎯 Sales AI Assistant
-
-**One-liner**: Can't write prompts? Just describe your scenario and get professional sales content.
-
-**Core Value**:
-- ✅ **Scenario Recognition**: Intelligently matches 25 sales scenarios
-- ✅ **Info Collection**: Auto-extracts key info, collects missing data once
-- ✅ **Dual Output**: Ready-to-use content + optimized prompt (for learning)
-- ✅ **Quick Adjustments**: "More formal", "Shorter", "Add data" commands
-
-**Supported Scenarios**:
-- Outreach (5): Cold emails, demo follow-ups, renewal proposals, activity summaries, pipeline reports
-- Strategy (5): Account plans, territory planning, prioritization, scoring, market entry
-- Competitive (5): Battle cards, competitive analysis, one-pagers, objection handling, social proof
-- Analytics (5): Conversion rates, rep performance, deal velocity, attribution, comparisons
-- Visuals (5): Sales funnels, personas, coverage maps, celebration graphics
-
----
-
-#### 🎨 Magazine Layout
-
-**One-liner**: Turn plain text into stunning magazine pages in seconds.
-
-**Core Value**:
-- 📱 12 curated visual styles
-- 🎯 Tailwind CSS responsive design
-- 📄 Multi-engine PDF export support
-- 🎨 Auto-layout: titles, intros, body, images
-
----
-
-#### 💡 Peers Advisory Group
-
-**One-liner**: 4 business legends (Buffett, Gates, Musk, Jobs) help analyze your problems.
-
-**Core Value**:
-- 👥 Multi-perspective analysis: Investment, Tech, Innovation, Product
-- 🔄 Deep questioning: 3 rounds per advisor
-- 📊 Structured output: Diagnosis → Analysis → Recommendations
-- 📝 Optional magazine-style HTML report
-
----
-
-#### 📹 Video Downloader
-
-**One-liner**: One skill to download videos from anywhere.
-
-**Core Value**:
-- 🌍 Supports 1000+ websites
-- 🎬 Quality options (360p to 4K)
-- 🎵 Audio extraction (MP3)
-- 📝 Subtitle download
-- 🔄 Auto WebM to MP4 conversion
-
----
-
-### 📥 Installation
-
-#### Option 1: Via Claude Code Plugin Marketplace (Recommended)
+### Quick Start
 
 ```bash
-claude plugin marketplace add isjiamu/jiamu-skills
+npx skills add https://github.com/isjiamu/jiamu-skills
 ```
 
-#### Option 2: Manual Installation
+### Skills by Category
 
-```bash
-# Clone to Claude Code skills directory
-git clone https://github.com/isjiamu/jiamu-skills.git ~/.claude/skills/jiamu-skills
+| Category | Skill | Description |
+|----------|-------|-------------|
+| 🧠 Thinking Model | [**gidlin-law**](./gidlin-law/) | Turn vague troubles into clear problem statements via 6-step questioning — a well-stated problem is half-solved |
+| 🧠 Thinking Model | [**five-why**](./five-why/) | Peel back symptoms with consecutive "why"s to find systemic root causes |
+| 🧠 Thinking Model | [**first-principles-mentor**](./first-principles-mentor/) | Socratic questioning down to axioms, then rebuild disruptive solutions from zero |
+| 🧠 Thinking Model | [**six-thinking-hats**](./six-thinking-hats/) | De Bono's parallel thinking across six dimensions with structured decision reports |
+| 💡 Decision Making | [**peers-advisory-group**](./peers-advisory-group/) | Virtual advisory board: Buffett, Gates, Musk & Jobs question and advise in rounds, backed by real-time Baidu data |
+| 🎯 Sales Enablement | [**sales-ai-assistant**](./sales-ai-assistant/) | Describe a business scenario, get professional sales content — 25 scenarios covered |
+| 📈 Investment | [**stock-advisor**](./stock-advisor/) | A-share analysis pipeline: technical → fundamental → cross-validation → advisory board → magazine report |
+| 🎨 Content Design | [**magazine-layout**](./magazine-layout/) | Text to magazine-style HTML pages, 12 visual styles, PDF export |
+| 🛠️ Utility | [**video-downloader**](./video-downloader/) | Download from 1000+ sites (YouTube, Bilibili, X, TikTok) |
+| 🛠️ Utility | [**gif-splitter**](./gif-splitter/) | Split GIFs exceeding WeChat's 300-frame upload limit |
 
-# Or create symbolic links
-ln -s /path/to/jiamu-skills/sales-ai-assistant ~/.claude/skills/sales-ai-assistant
-ln -s /path/to/jiamu-skills/magazine-layout ~/.claude/skills/magazine-layout
-# ... other skills
-```
+**Recommended thinking-tool chain**: `gidlin-law` (define) → `five-why` / `first-principles-mentor` (dig) → `six-thinking-hats` (decide) → `peers-advisory-group` (consult).
 
-#### Option 3: From .skill Files
+### Version History
 
-Each skill provides a packaged .skill file (zip format) that can be extracted to the skills directory.
+See [CHANGELOG.md](./CHANGELOG.md).
 
----
+### License
 
-### 🚀 Usage
-
-See the Chinese section above for detailed usage examples.
-
----
-
-### 📄 License
-
-MIT License - see [LICENSE](./LICENSE) for details.
-
----
-
-### 👤 Author
-
-**jiamu** ([@isjiamu](https://github.com/isjiamu))
-
-AI tools and productivity enthusiast
-
----
-
-### 📊 Version History
-
-- **v1.6.0** (2026-07-05) - Added thinking-model series: gidlin-law, five-why, first-principles-mentor, six-thinking-hats; peers-advisory-group now integrates Baidu real-time data
-- **v1.5.0** (2026-03-28) - Added stock-advisor (A-share investment analysis pipeline)
-- **v1.4.0** (2026-01-26) - Added gif-splitter (GIF frame splitter)
-- **v1.3.0** (2026-01-23) - Added sales-ai-assistant (25 sales scenarios)
-- **v1.2.0** - Added video-downloader
-- **v1.1.0** - Added magazine-layout and peers-advisory-group
-- **v1.0.0** - Initial release
-
----
-
-<div align="center">
-
-**⭐ If these skills help you, please give a Star! ⭐**
-
-Made with ❤️ by jiamu
-
-</div>
+MIT — see [LICENSE](./LICENSE).

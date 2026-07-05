@@ -14,6 +14,8 @@
 ### 🔧 改进
 
 - **peers-advisory-group**：新增 Pre-Workflow「幕僚信息更新」，融合百度搜索和百度百科实时数据，让幕僚从"凭经验聊"升级为"带着数据聊"
+- **magazine-layout**：独立仓库 `isjiamu/magazine-layout-skill` 已归档，README 并入本仓库，此处为唯一维护源
+- README 全面改版：按六大类重新组织技能、新增触发关键词、30秒安装、使用场景对照表、平台支持说明
 - 新增 `.gitignore`，清理仓库中的系统文件和本地备份
 - 合并零散的 RELEASE_NOTES 文件为统一的 CHANGELOG.md
 
