@@ -28,6 +28,10 @@
 | [**video-downloader**](./video-downloader/) | 📹 工具类 | 通用视频下载器 - 支持1000+网站的视频下载 | YouTube、Bilibili、Twitter、TikTok等 |
 | [**gif-splitter**](./gif-splitter/) | 🖼️ 工具类 | GIF动图切分器 - 将超限GIF智能拆分成多个小文件 | 微信公众号上传、帧数限制、批量处理 |
 | [**stock-advisor**](./stock-advisor/) | 📈 投资分析 | A股投资顾问 - 全自动分析流水线，串联技术面、基本面、私董会决策 | 股票分析、投资决策、研报解读 |
+| [**gidlin-law**](./gidlin-law/) | 🧠 思维模型 | 吉德林法则顾问 - 六步结构化提问，把模糊困扰转化为清晰问题陈述 | 理清思路、定义问题、思维工具前置 |
+| [**five-why**](./five-why/) | 🧠 思维模型 | 5Why溯源顾问 - 连续追问"为什么"找到系统性根本原因 | 根因分析、团队复盘、问题溯源 |
+| [**first-principles-mentor**](./first-principles-mentor/) | 🧠 思维模型 | 第一性原理思维导师 - 拆解问题至基本公理，从零重构颠覆性方案 | 本质分析、颠覆式创新、重大决策拆解 |
+| [**six-thinking-hats**](./six-thinking-hats/) | 🧠 思维模型 | 六顶思考帽决策引导师 - 平行思维法六维度系统化分析 | 决策分析、利弊权衡、团队结构化讨论 |
 
 ### 🌟 核心特色
 
@@ -130,6 +134,27 @@ Skill：识别场景 → 收集信息 → 生成邮件 + 提示词
 
 **适用场景**：
 - A股个股深度分析、持仓评估、投资决策参考
+
+---
+
+#### 🧠 思维模型系列 - 四件套
+
+**一句话描述**：从"说不清问题"到"做出决策"的完整思维工具链。
+
+| Skill | 思维模型 | 解决什么 |
+|-------|---------|---------|
+| **gidlin-law** | 吉德林法则 | 把问题写清楚，就已经解决了一半——六步提问把模糊困扰变成清晰问题陈述 |
+| **five-why** | 5Why 分析法 | 连续追问"为什么"，剥离表象找到机制性根因，制定根治对策 |
+| **first-principles-mentor** | 第一性原理 | 苏格拉底式提问拆解至基本公理，挑战行业惯例，从零重构方案 |
+| **six-thinking-hats** | 六顶思考帽 | 德·博诺平行思维法，六个维度系统化分析，产出结构化决策报告 |
+
+**推荐串联用法**：
+```
+gidlin-law（定义问题）
+  → five-why（找根因）或 first-principles-mentor（拆解本质）
+    → six-thinking-hats（多维决策）
+      → peers-advisory-group（私董会深度咨询）
+```
 
 ---
 
@@ -314,6 +339,21 @@ jiamu-skills/
 │       ├── advisory-board.md       # 私董会详细指南
 │       ├── report-structure.md     # 报告结构模板
 │       └── image-prompts.md        # 图像识别提示词
+├── gidlin-law/                  # 吉德林法则顾问
+│   └── SKILL.md
+├── five-why/                    # 5Why溯源顾问
+│   ├── SKILL.md
+│   └── references/
+│       └── visualization-template.md
+├── first-principles-mentor/     # 第一性原理思维导师
+│   └── SKILL.md
+├── six-thinking-hats/           # 六顶思考帽决策引导师
+│   ├── SKILL.md
+│   └── references/
+│       ├── hat-personas.md
+│       ├── report-template.md
+│       └── team-guide.md
+├── CHANGELOG.md
 ├── LICENSE
 └── README.md
 ```
@@ -356,12 +396,15 @@ MIT License - 详见 [LICENSE](./LICENSE)
 
 ### 📊 版本历史
 
+- **v1.6.0** (2026-07-05) - 新增思维模型系列：gidlin-law、five-why、first-principles-mentor、six-thinking-hats；peers-advisory-group 融合百度实时数据
 - **v1.5.0** (2026-03-28) - 新增 stock-advisor（A股投资顾问，全自动分析流水线）
 - **v1.4.0** (2026-01-26) - 新增 gif-splitter（GIF动图切分器）
 - **v1.3.0** (2026-01-23) - 新增 sales-ai-assistant（25个销售场景）
 - **v1.2.0** - 新增 video-downloader
 - **v1.1.0** - 新增 magazine-layout 和 peers-advisory-group
 - **v1.0.0** - 初始版本
+
+完整更新记录见 [CHANGELOG.md](./CHANGELOG.md)
 
 ---
 
@@ -387,6 +430,10 @@ Made with ❤️ by jiamu
 | [**video-downloader**](./video-downloader/) | 📹 Utility | Universal video downloader supporting 1000+ websites | YouTube, Bilibili, Twitter, TikTok, etc. |
 | [**gif-splitter**](./gif-splitter/) | 🖼️ Utility | GIF splitter for frame limit issues | WeChat upload, batch processing |
 | [**stock-advisor**](./stock-advisor/) | 📈 Investment | A-share Stock Advisor - fully automated analysis pipeline | Stock analysis, investment decisions |
+| [**gidlin-law**](./gidlin-law/) | 🧠 Thinking Model | Gidlin's Law advisor - turn vague troubles into clear problem statements via 6-step questioning | Problem definition, clarifying thoughts |
+| [**five-why**](./five-why/) | 🧠 Thinking Model | 5 Whys root-cause advisor - peel back symptoms to find systemic root causes | Root cause analysis, retrospectives |
+| [**first-principles-mentor**](./first-principles-mentor/) | 🧠 Thinking Model | First-principles mentor - deconstruct problems to axioms and rebuild from zero | Essential analysis, disruptive innovation |
+| [**six-thinking-hats**](./six-thinking-hats/) | 🧠 Thinking Model | Six Thinking Hats facilitator - parallel thinking across six dimensions | Decision analysis, structured discussion |
 
 ### 🌟 Key Features
 
@@ -494,6 +541,7 @@ AI tools and productivity enthusiast
 
 ### 📊 Version History
 
+- **v1.6.0** (2026-07-05) - Added thinking-model series: gidlin-law, five-why, first-principles-mentor, six-thinking-hats; peers-advisory-group now integrates Baidu real-time data
 - **v1.5.0** (2026-03-28) - Added stock-advisor (A-share investment analysis pipeline)
 - **v1.4.0** (2026-01-26) - Added gif-splitter (GIF frame splitter)
 - **v1.3.0** (2026-01-23) - Added sales-ai-assistant (25 sales scenarios)
