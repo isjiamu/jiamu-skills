@@ -4,11 +4,11 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
 ![Skill](https://img.shields.io/badge/Skill-Agent-111111?style=flat-square)
 ![Claude Code](https://img.shields.io/badge/Claude%20Code-Supported-6B5B95?style=flat-square)
-![Skills](https://img.shields.io/badge/Skills-10-0A7CFF?style=flat-square)
+![Skills](https://img.shields.io/badge/Skills-11-0A7CFF?style=flat-square)
 
 **中文** | [English](./README.en.md)
 
-一套适配 Claude Code 等 Agent 环境的技能合集，覆盖**思维模型、决策咨询、销售赋能、投资分析、内容设计和实用工具**六大类，共 10 个技能。
+一套适配 Claude Code 等 Agent 环境的技能合集，覆盖**思维模型、决策咨询、销售赋能、投资分析、内容设计和实用工具**六大类，共 11 个技能。
 
 > 由 [甲木](https://github.com/isjiamu) 在日常销售、内容创作和决策咨询工作流中沉淀而成——每个技能都解决一个真实、反复出现的问题。
 
@@ -41,6 +41,7 @@ npx skills add https://github.com/isjiamu/jiamu-skills
 这个问题老是反复出现，帮我找找根因。    → 触发 five-why
 帮我从多个角度分析要不要换工作。       → 触发 six-thinking-hats
 开始私董会，我在纠结要不要创业。       → 触发 peers-advisory-group
+给这个新品做一条 15 秒的品牌广告片。   → 触发 tvc-ad-film
 ```
 
 ---
@@ -85,11 +86,12 @@ gidlin-law（定义问题）
 |------|------|-----------|
 | [**stock-advisor**](./stock-advisor/) | A股投资顾问——全自动分析流水线：技术面 → 基本面 → 交叉验证 → 私董会决策 → 杂志报告，AKShare 免费数据驱动 | "帮我分析股票"、股票代码、K线图截图 |
 
-### 🎨 内容设计（1个）
+### 🎨 内容设计（2个）
 
 | 技能 | 描述 | 触发关键词 |
 |------|------|-----------|
 | [**magazine-layout**](./magazine-layout/) | 杂志排版工具——文本秒变高颜值杂志页面，12种视觉风格，Tailwind 响应式，支持多引擎PDF导出 | "杂志排版"、"文章排版"、"magazine layout" |
+| [**tvc-ad-film**](./tvc-ad-film/) | TVC 产品广告片——从产品理解、6 个创意方向、分镜脚本和逐镜头提示词，到锚点、关键帧、视频生成与合成，完成 15–25 秒品牌短片 | "做一条 TVC"、"产品广告片"、"品牌短片"、"新品上市视频" |
 
 ### 🛠️ 实用工具（2个）
 
@@ -111,13 +113,14 @@ gidlin-law（定义问题）
 | 写销售邮件/方案/竞品对比 | **sales-ai-assistant** 描述场景直接生成 |
 | 个股深度分析 | **stock-advisor** 发股票代码或K线截图，全流水线自动跑 |
 | 文章排版成杂志页面/PDF | **magazine-layout** 选风格生成HTML |
+| 用产品图制作品牌投放级广告短片 | **tvc-ad-film** 先选创意方向，再确认分镜和关键帧，生成并合成 TVC |
 | 公众号GIF上传失败 | **gif-splitter** 自动检测帧数并切分 |
 
 ---
 
 ## 适合 / 不适合
 
-**✅ 合适**：个人决策与复盘 / 销售内容批量生产 / A股个股研究 / 文章视觉化呈现 / 公众号运营中的素材处理
+**✅ 合适**：个人决策与复盘 / 销售内容批量生产 / A股个股研究 / 文章视觉化呈现 / TVC 广告短片策划与生成 / 公众号运营中的素材处理
 
 **❌ 不合适**：需要实时协作编辑的场景 / 无 shell 权限的普通 Chatbot（思维模型类勉强可用，工具类无法运行脚本）
 
@@ -179,6 +182,7 @@ jiamu-skills/
 ├── sales-ai-assistant/       # 🎯 销售AI助手（25个场景模板）
 ├── stock-advisor/            # 📈 A股投资顾问（分析脚本 + 报告模板）
 ├── magazine-layout/          # 🎨 杂志排版工具（12种风格 + PDF导出）
+├── tvc-ad-film/              # 🎨 TVC产品广告片（创意 + 分镜 + 生成合成）
 ├── video-downloader/         # 🛠️ 通用视频下载器
 ├── gif-splitter/             # 🛠️ GIF动图切分器
 ├── CHANGELOG.md
@@ -204,6 +208,7 @@ jiamu-skills/
 
 ## 📊 版本历史
 
+- **v1.7.0** (2026-07-14) - 新增 tvc-ad-film：从产品理解、创意提案和分镜提示词，到关键帧、视频生成与合成的 TVC 广告片工作流
 - **v1.6.0** (2026-07-05) - 新增思维模型系列4件套；peers-advisory-group 融合百度实时数据；magazine-layout 独立仓库归档合并
 - **v1.5.0** (2026-03-28) - 新增 stock-advisor
 - **v1.4.0** (2026-01-26) - 新增 gif-splitter

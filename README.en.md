@@ -4,11 +4,11 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
 ![Skill](https://img.shields.io/badge/Skill-Agent-111111?style=flat-square)
 ![Claude Code](https://img.shields.io/badge/Claude%20Code-Supported-6B5B95?style=flat-square)
-![Skills](https://img.shields.io/badge/Skills-10-0A7CFF?style=flat-square)
+![Skills](https://img.shields.io/badge/Skills-11-0A7CFF?style=flat-square)
 
 [中文](./README.md) | **English**
 
-A curated collection of Agent Skills for Claude Code and similar agent environments — **10 skills across six categories**: thinking models, decision consulting, sales enablement, investment analysis, content design, and utilities.
+A curated collection of Agent Skills for Claude Code and similar agent environments — **11 skills across six categories**: thinking models, decision consulting, sales enablement, investment analysis, content design, and utilities.
 
 > Distilled by [jiamu](https://github.com/isjiamu) from real daily workflows in sales, content creation, and decision consulting — every skill solves a real, recurring problem.
 
@@ -41,6 +41,7 @@ I feel lost and can't articulate what's wrong.     → triggers gidlin-law
 This problem keeps coming back, find the root cause. → triggers five-why
 Help me analyze whether to change jobs, from multiple angles. → triggers six-thinking-hats
 Start a peer advisory session — I'm torn about starting a business. → triggers peers-advisory-group
+Create a 15-second brand film for this new product. → triggers tvc-ad-film
 ```
 
 ---
@@ -85,11 +86,12 @@ gidlin-law (define the problem)
 |-------|-------------|-----------------|
 | [**stock-advisor**](./stock-advisor/) | A-share analysis pipeline: technical → fundamental → cross-validation → advisory board → magazine report, powered by free AKShare data | "analyze this stock", a ticker symbol, a candlestick screenshot |
 
-### 🎨 Content Design (1)
+### 🎨 Content Design (2)
 
 | Skill | Description | Trigger Phrases |
 |-------|-------------|-----------------|
 | [**magazine-layout**](./magazine-layout/) | Turn plain text into magazine-style HTML pages — 12 visual styles, Tailwind responsive, multi-engine PDF export | "magazine layout", "format this article" |
+| [**tvc-ad-film**](./tvc-ad-film/) | TVC product advertising workflow — from product analysis, six creative directions, storyboards, and shot prompts to anchors, keyframes, video generation, and assembly for a 15–25 second brand film | "create a TVC", "product commercial", "brand film", "product launch video" |
 
 ### 🛠️ Utilities (2)
 
@@ -111,13 +113,14 @@ gidlin-law (define the problem)
 | Sales emails / proposals / battle cards | **sales-ai-assistant** — describe the scenario, get the content |
 | Deep-dive a single A-share stock | **stock-advisor** — send a ticker or chart screenshot, full pipeline runs |
 | Turn an article into a magazine page / PDF | **magazine-layout** — pick a style, get HTML |
+| Create a campaign-ready brand film from product imagery | **tvc-ad-film** — choose a creative direction, approve the storyboard and keyframes, then generate and assemble the TVC |
 | WeChat GIF upload fails | **gif-splitter** — auto-detect frames and split |
 
 ---
 
 ## Good Fit / Not a Fit
 
-**✅ Good fit**: personal decisions & retrospectives / bulk sales content production / A-share stock research / visual article presentation / WeChat content-ops asset processing
+**✅ Good fit**: personal decisions & retrospectives / bulk sales content production / A-share stock research / visual article presentation / TVC concepting and production / WeChat content-ops asset processing
 
 **❌ Not a fit**: real-time collaborative editing / plain chatbots without shell access (thinking-model skills partially work; utility skills need to run scripts)
 
@@ -179,6 +182,7 @@ jiamu-skills/
 ├── sales-ai-assistant/       # 🎯 Sales AI assistant (25 scenario templates)
 ├── stock-advisor/            # 📈 A-share stock advisor (analysis scripts + report templates)
 ├── magazine-layout/          # 🎨 Magazine layout engine (12 styles + PDF export)
+├── tvc-ad-film/              # 🎨 TVC product ad film (concept + storyboard + production)
 ├── video-downloader/         # 🛠️ Universal video downloader
 ├── gif-splitter/             # 🛠️ GIF splitter
 ├── CHANGELOG.md
@@ -204,6 +208,7 @@ Issues and Pull Requests welcome!
 
 ## 📊 Version History
 
+- **v1.7.0** (2026-07-14) - Added tvc-ad-film, an end-to-end TVC workflow from product analysis, creative concepts, and shot prompts to keyframes, video generation, and assembly
 - **v1.6.0** (2026-07-05) - Added the thinking-model series (4 skills); peers-advisory-group now integrates real-time Baidu data; magazine-layout standalone repo archived and merged
 - **v1.5.0** (2026-03-28) - Added stock-advisor
 - **v1.4.0** (2026-01-26) - Added gif-splitter
